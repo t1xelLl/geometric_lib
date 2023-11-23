@@ -5,11 +5,11 @@ import circle
 class CircleTestCase(unittest.TestCase):
     def test_negative_perimetr(self):
         result = circle.perimeter(-2)
-        self.assertEqual(result, -12.566370614359172)  # "The radius cannot be negative"
+        self.assertEqual(result, "Error")  # "The radius cannot be negative"
 
     def test_positive_perimeter(self):
         result = circle.perimeter(5)
-        self.assertAlmostEqual(result, 31.41592653589793)
+        self.assertAlmostEqual(result, 31.4)
 
     def test_zero_perimeter(self):
         result = circle.perimeter(0)  # Side can not be 0
@@ -17,7 +17,7 @@ class CircleTestCase(unittest.TestCase):
 
     def test_negative_area(self):
         result = circle.perimeter(-2)
-        self.assertEqual(result, -12.566370614359172)  # "The radius cannot be negative"
+        self.assertEqual(result, "Error")  # "The radius cannot be negative"
 
     def test_positive_area(self):
         result = circle.area(5)
