@@ -5,7 +5,7 @@ import circle
 class CircleTestCase(unittest.TestCase):
     def test_negative_perimetr(self):
         with self.assertRaises(ValueError):
-            result = circle.perimeter(-2) # "The radius cannot be negative"
+            result = circle.perimeter(-2)  # "The radius cannot be negative"
 
 
     def test_positive_perimeter(self):
